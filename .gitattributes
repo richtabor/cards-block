@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Omit workflows from export
+.github/workflows/* export-ignore
