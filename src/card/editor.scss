@@ -1,0 +1,11 @@
+.wp-block-tabor-card:not(.is-selected) {
+
+	.wp-block-tabor-card__title,
+	.wp-block-tabor-card__description {
+		white-space: nowrap !important;
+	}
+}
+
+.wp-block-tabor-card:active {
+    transform: scale(1) !important;
+}

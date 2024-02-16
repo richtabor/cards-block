@@ -1,0 +1,1 @@
+{"version":3,"file":"./style-index.css","mappings":";;;AAAA;EACI;AACJ,C","sources":["webpack://tabor-cards-block/./src/style.scss"],"sourcesContent":[".wp-block-tabor-cards {\n    gap: 6px;\n}\n"],"names":[],"sourceRoot":""}

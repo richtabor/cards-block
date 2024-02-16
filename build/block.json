@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tabor/cards",
+  "version": "0.1.0",
+  "title": "Cards",
+  "category": "design",
+  "allowedBlocks": [
+    "tabor/card"
+  ],
+  "icon": "smiley",
+  "description": "A collection of simple cards to add to your site.",
+  "attributes": {
+    "taxonomy": {
+      "type": "string",
+      "default": "post_tag"
+    },
+    "showTagCounts": {
+      "type": "boolean",
+      "default": false
+    },
+    "smallestFontSize": {
+      "type": "string",
+      "default": "8pt"
+    },
+    "largestFontSize": {
+      "type": "string",
+      "default": "22pt"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "layout": {
+      "allowSwitching": false,
+      "allowInheriting": false,
+      "allowEditing": false,
+      "default": {
+        "type": "grid",
+        "flexWrap": "wrap"
+      }
+    },
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "width": true,
+      "style": true,
+      "radius": true,
+      "__experimentalDefaultControls": {
+        "color": false,
+        "width": false,
+        "style": false,
+        "radius": false
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": {
+        "__experimentalDefault": "6px"
+      },
+      "__experimentalDefaultControls": {
+        "blockGap": false,
+        "padding": false,
+        "margin": false
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalFontWeight": true,
+      "__experimentalFontStyle": true,
+      "__experimentalTextTransform": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    }
+  },
+  "textdomain": "tabor-cards",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

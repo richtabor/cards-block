@@ -1,0 +1,122 @@
+/*!********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/card/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************/
+.wp-block-tabor-card {
+  align-items: flex-start;
+  box-shadow: inset 0 0 0 1px var(--wp--preset--color--theme-3);
+  border-radius: 12px;
+  padding: var(--wp--preset--spacing--20);
+  font-size: var(--wp--preset--font-size--small);
+  display: flex;
+  flex-direction: row;
+  text-decoration: none !important;
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.wp-block-tabor-card:before {
+  background-color: var(--wp--preset--color--theme-2);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px var(--wp--preset--color--theme-4);
+  opacity: 0;
+  transition: opacity 200ms ease-out;
+  z-index: -1;
+}
+.wp-block-tabor-card:hover:before {
+  box-shadow: inset 0 0 0 1px var(--wp--preset--color--theme-4);
+  opacity: 1;
+}
+.wp-block-tabor-card:hover .is-overflow {
+  white-space: nowrap;
+  text-overflow: none;
+  display: block;
+  transform: translateX(-60%);
+  transition: transform 3s ease-out;
+}
+.wp-block-tabor-card:hover .wp-block-tabor-card__description.is-overflow {
+  transition: transform 2.8s ease-out;
+}
+.wp-block-tabor-card:active {
+  transform: scale(0.98);
+}
+
+.wp-block-tabor-card__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  -webkit-mask-image: linear-gradient(to left, transparent 2%, black 20%);
+          mask-image: linear-gradient(to left, transparent 2%, black 20%);
+}
+.wp-block-tabor-card__content.has-image {
+  -webkit-mask-image: linear-gradient(to left, transparent 2%, black 20%, black 90%, transparent);
+          mask-image: linear-gradient(to left, transparent 2%, black 20%, black 90%, transparent);
+  width: calc(100% - 44px);
+}
+
+.wp-block-tabor-card__title,
+.wp-block-tabor-card__description {
+  white-space: nowrap;
+  transition: transform 800ms ease-out;
+}
+
+.wp-block-tabor-card__description {
+  opacity: 0.7;
+  font-size: 90%;
+}
+
+.wp-block-tabor-card > span + span {
+  padding-left: 12px;
+}
+
+.wp-block-tabor-card__image {
+  background-color: var(--wp--preset--color--theme-2);
+  border-radius: 3px;
+  display: block;
+  width: 44px;
+  height: 44px;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.wp-block-tabor-card__image:after {
+  content: "";
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+.wp-block-tabor-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: inherit;
+  position: absolute;
+  transition: transform 200ms ease-out;
+}
+
+.wp-block-tabor-card__image-blur {
+  box-shadow: none;
+  filter: blur(8px);
+  z-index: -1;
+  transform: scale(0.75) translateY(4px);
+  transition: transform 200ms ease-out;
+  backface-visibility: hidden;
+}
+.wp-block-tabor-card:hover .wp-block-tabor-card__image-blur {
+  transform: scale(0.8) translateY(4px);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

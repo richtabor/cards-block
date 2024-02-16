@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "tabor/card",
+  "version": "0.1.0",
+  "title": "Card",
+  "category": "design",
+  "icon": "smiley",
+  "parent": [
+    "tabor/cards"
+  ],
+  "description": "",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string",
+      "default": null
+    },
+    "isOverflowTitle": {
+      "type": "boolean",
+      "default": false
+    },
+    "isOverflowDescription": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "__experimentalBorder": {
+      "color": true,
+      "width": true,
+      "style": true,
+      "radius": true,
+      "__experimentalDefaultControls": {
+        "color": false,
+        "width": false,
+        "style": false,
+        "radius": false
+      }
+    }
+  },
+  "textdomain": "tabor-card",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
