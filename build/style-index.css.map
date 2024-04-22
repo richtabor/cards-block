@@ -1,1 +1,1 @@
-{"version":3,"file":"./style-index.css","mappings":";;;AAAA;EACI;AACJ,C","sources":["webpack://tabor-cards-block/./src/style.scss"],"sourcesContent":[".wp-block-tabor-cards {\n    gap: 6px;\n}\n"],"names":[],"sourceRoot":""}
+{"version":3,"file":"./style-index.css","mappings":";;;AAAA;EACI;AACJ;AACC;EAEC;AAAF,C","sources":["webpack://tabor-cards-block/./src/style.scss"],"sourcesContent":[".wp-block-tabor-cards {\n    gap: 6px;\n\n\t&.is-layout-grid {\n\t\t// Always stay side-by-side.\n\t\tgrid-template-columns: 1fr 1fr !important;\n\t}\n}\n"],"names":[],"sourceRoot":""}

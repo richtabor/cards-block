@@ -4,5 +4,8 @@
 .wp-block-tabor-cards {
   gap: 6px;
 }
+.wp-block-tabor-cards.is-layout-grid {
+  grid-template-columns: 1fr 1fr !important;
+}
 
 /*# sourceMappingURL=style-index.css.map*/

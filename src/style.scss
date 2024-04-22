@@ -1,3 +1,8 @@
 .wp-block-tabor-cards {
     gap: 6px;
+
+	&.is-layout-grid {
+		// Always stay side-by-side.
+		grid-template-columns: 1fr 1fr !important;
+	}
 }

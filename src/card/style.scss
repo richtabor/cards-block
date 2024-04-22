@@ -10,7 +10,7 @@
     position: relative;
     overflow: hidden;
     backface-visibility: hidden;
-    transition: transform 200ms cubic-bezier(.4,0,.2,1);
+    transition: transform var(--wp--custom--transition--duration, 200ms) cubic-bezier(.4,0,.2,1);
 
 	&:before {
 		background-color: var(--wp--preset--color--theme-2);
@@ -23,7 +23,7 @@
 		border-radius: inherit;
 		box-shadow: inset 0 0 0 1px var(--wp--preset--color--theme-4);
 		opacity: 0;
-		transition: opacity 200ms ease-out;
+		transition: opacity var(--wp--custom--transition--duration, 200ms) ease-out;
 		z-index: -1;
 	}
 
@@ -107,7 +107,7 @@
 		object-fit: cover;
 		border-radius: inherit;
 		position: absolute;
-		transition: transform 200ms ease-out;
+		transition: transform var(--wp--custom--transition--duration, 200ms) ease-out;
 	}
 }
 
@@ -116,7 +116,7 @@
 	filter: blur(8px);
 	z-index: -1;
 	transform: scale(0.75) translateY(4px);
-	transition: transform 200ms ease-out;
+	transition: transform var(--wp--custom--transition--duration, 200ms) ease-out;
 	backface-visibility: hidden;
 
 	.wp-block-tabor-card:hover & {
