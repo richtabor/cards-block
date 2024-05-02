@@ -1,6 +1,6 @@
 # Cards Block
 
-A WordPress block to add collection of simple cards to your site, as seen on [my blog](https://rich.blog), and built with [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/). 
+A WordPress block to add a collection of simple cards to your site, as seen on [my blog](https://rich.blog), and built with [@wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/). 
 
 [Read about it on my blog →](https://rich.blog/cards-block/)
 
